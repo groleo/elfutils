@@ -164,7 +164,8 @@ find_debuginfo_in_path (Dwfl_Module *mod, const char *file_name,
     }
 
   char *file_dirname = (file_basename == file_name ? NULL
-			: strndupa (file_name, file_basename - 1 - file_name));
+			: strndupa (file_name,
+			    (size_t) (file_basename - 1 - file_name)));
   char *p;
   while ((p = strsep (&path, ":")) != NULL)
     {

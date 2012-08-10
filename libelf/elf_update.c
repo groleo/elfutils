@@ -127,7 +127,7 @@ write_file (Elf *elf, off_t size, int change_bo, size_t shnum)
 }
 
 
-off_t
+loff_t
 elf_update (elf, cmd)
      Elf *elf;
      Elf_Cmd cmd;

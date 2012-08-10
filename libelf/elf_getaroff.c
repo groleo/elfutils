@@ -38,7 +38,7 @@
 #include "libelfP.h"
 
 
-off_t
+loff_t
 elf_getaroff (elf)
      Elf *elf;
 {
