@@ -8,7 +8,7 @@
 #define LOCALEDIR "${datarootdir}"
 
 /* Identifier for modules in the build. */
-#define MODVERSION "Build on bencheng.mtv.corp.google.com 2012-02-28T15:09:22-0800"
+#define MODVERSION "Build on dtatulea-pc.ger.corp.intel.com 2012-09-07T15:09:22-0800"
 
 /* Define to 32 or 64 if a specific implementation is wanted. */
 /* #undef NATIVE_ELF */
@@ -23,19 +23,19 @@
 #define PACKAGE_NAME "Red Hat elfutils"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Red Hat elfutils 0.138"
+#define PACKAGE_STRING "Red Hat elfutils 0.154"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "elfutils"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "0.138"
+#define PACKAGE_VERSION "0.154"
 
 /* Defined if thread local storage should be used. */
 /* #undef USE_TLS */
 
 /* Version number of package */
-#define VERSION "0.138"
+#define VERSION "0.154"
 
 /* Define to 1 if `lex' declares `yytext' as a `char *' by default, not a
    `char[]'. */
