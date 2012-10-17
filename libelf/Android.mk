@@ -159,9 +159,10 @@ endif
 # to fix machine-dependent issues
 LOCAL_CFLAGS += -include $(LOCAL_PATH)/../host-$(HOST_OS)-fixup/AndroidFixup.h
 
+LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libelfrh
 
-include $(BUILD_HOST_STATIC_LIBRARY)
+include $(BUILD_HOST_SHARED_LIBRARY)
 
 #
 # target libelf
@@ -188,6 +189,6 @@ LOCAL_MODULE_TAGS := eng
 
 LOCAL_MODULE := libelfrh
 
-include $(BUILD_STATIC_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
 
 endif #cur_platform

@@ -89,11 +89,15 @@ LOCAL_CFLAGS += -DHAVE_CONFIG_H -std=gnu99 -D_GNU_SOURCE
 
 LOCAL_CFLAGS += -include $(LOCAL_PATH)/../host-$(HOST_OS)-fixup/AndroidFixup.h
 
+LOCAL_LDFLAGS += -ldl
+
+LOCAL_SHARED_LIBRARIES := libelfrh
+
 LOCAL_MODULE_TAGS := eng
 
 LOCAL_MODULE:= libeblrh
 
-include $(BUILD_HOST_STATIC_LIBRARY)
+include $(BUILD_HOST_SHARED_LIBRARY)
 
 #
 # target libebl
@@ -117,10 +121,12 @@ LOCAL_CFLAGS += -include $(LOCAL_PATH)/../bionic-fixup/AndroidFixup.h
 
 LOCAL_CFLAGS += -DHAVE_CONFIG_H -std=gnu99 -Werror
 
+LOCAL_SHARED_LIBRARIES := libelfrh libdl
+
 LOCAL_MODULE_TAGS := eng
 
 LOCAL_MODULE:= libeblrh
 
-include $(BUILD_STATIC_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
 
 endif #cur_platform
