@@ -159,8 +159,6 @@ LOCAL_CFLAGS += -include $(LOCAL_PATH)/../host-$(HOST_OS)-fixup/AndroidFixup.h
 
 LOCAL_SHARED_LIBRARIES := libelfrh libeblrh
 
-LOCAL_MODULE_TAGS := eng
-
 LOCAL_MODULE:= libdwrh
 
 include $(BUILD_HOST_SHARED_LIBRARY)
@@ -194,7 +192,7 @@ LOCAL_CFLAGS += -Wno-pointer-arith
 
 LOCAL_SHARED_LIBRARIES := libelfrh libeblrh
 
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE:= libdwrh
 

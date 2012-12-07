@@ -159,7 +159,6 @@ endif
 # to fix machine-dependent issues
 LOCAL_CFLAGS += -include $(LOCAL_PATH)/../host-$(HOST_OS)-fixup/AndroidFixup.h
 
-LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libelfrh
 
 include $(BUILD_HOST_SHARED_LIBRARY)
@@ -185,7 +184,7 @@ LOCAL_CFLAGS += -Wno-pointer-arith
 
 LOCAL_CFLAGS += -include $(LOCAL_PATH)/../bionic-fixup/AndroidFixup.h
 
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE := libelfrh
 

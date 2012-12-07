@@ -93,8 +93,6 @@ LOCAL_LDFLAGS += -ldl
 
 LOCAL_SHARED_LIBRARIES := libelfrh
 
-LOCAL_MODULE_TAGS := eng
-
 LOCAL_MODULE:= libeblrh
 
 include $(BUILD_HOST_SHARED_LIBRARY)
@@ -123,7 +121,7 @@ LOCAL_CFLAGS += -DHAVE_CONFIG_H -std=gnu99 -Werror
 
 LOCAL_SHARED_LIBRARIES := libelfrh libdl
 
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE:= libeblrh
 
