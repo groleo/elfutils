@@ -117,7 +117,7 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/../bionic-fixup
 
 LOCAL_CFLAGS += -include $(LOCAL_PATH)/../bionic-fixup/AndroidFixup.h
 
-LOCAL_CFLAGS += -DHAVE_CONFIG_H -std=gnu99 -Werror
+LOCAL_CFLAGS += -DHAVE_CONFIG_H -std=gnu99
 
 LOCAL_SHARED_LIBRARIES := libelfrh libdl
 

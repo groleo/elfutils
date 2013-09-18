@@ -35,6 +35,7 @@
 #include <endian.h>
 #include <byteswap.h>
 #include <unistd.h>
+#include <errno.h>
 
 #if __BYTE_ORDER == __LITTLE_ENDIAN
 # define LE32(n)	(n)
